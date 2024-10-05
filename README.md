@@ -1,6 +1,3 @@
-# ToDo
-ToDo APP
-
 # Instrucciones de uso
 El uso de esta aplicación es muy simple, solo hay que abrir el archivo *"index.html"* y podremos ver la interfaz de la misma.
 Una vez estemos corriendo el programa, podemos comenzar a ingresar tareas, escribiendola en el input con el texto *"Añadir tarea"*, precionamos *"Añadir"* y veremos que la tarea se agrega en la parte inferior.
