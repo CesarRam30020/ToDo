@@ -9,5 +9,5 @@ Una vez estemos corriendo el programa, podemos comenzar a ingresar tareas, escri
 Teniendo las tareas una vez agregadas, seremos capaces de precionar sobre cada una de ellas para ~tachar~ el texto y así poder identificar que la tarea a sido terminada.
 ![tareas](https://github.com/user-attachments/assets/e3e68375-7831-4d1f-a985-97699dbfacb6)
 
-Igualmente se pueden eliminar las tareas precionando el boton rojo que dice *"Eliminar"* `#f03c15`
+Igualmente se pueden eliminar las tareas precionando el boton rojo que dice ```diff - *"Eliminar"*```
 ![eliminado](https://github.com/user-attachments/assets/96736aff-a66b-4bef-8e9d-96db2502d7ef)
