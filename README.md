@@ -12,5 +12,5 @@ Igualmente se pueden eliminar las tareas precionando el boton rojo que dice *"El
 Es importante mencionar que se utiliza localStorage, por lo que es posible recargar la pagina y aun ver las tareas previamente agregadas.
 
 
-# GIF de la aplicación en funcionamiento
+# Video del funcionamiento de la aplicación
 https://github.com/user-attachments/assets/9008cb72-f55c-4bc2-957a-4d7a70827d71
