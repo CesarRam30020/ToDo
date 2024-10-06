@@ -86,3 +86,20 @@ li {
   text-decoration: line-through;
   color: #888;
 }
+
+.text-danger {
+  color: red;
+}
+
+@keyframes earthquake {
+  0% { transform: translate(0px, 0px); }
+  25% { transform: translate(-2px, 2px); }
+  50% { transform: translate(2px, -2px); }
+  75% { transform: translate(-2px, -2px); }
+  100% { transform: translate(2px, 2px); }
+}
+
+.earthquake {
+  display: inline-block;
+  animation: earthquake 0.5s .5;
+}
