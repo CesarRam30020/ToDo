@@ -1,7 +1,6 @@
 const taskList = document.getElementById('task-list');
 let tasksArray = JSON.parse(localStorage.getItem('tasks')) || [];
 
-// Escuchar el botón de añadir tarea
 document.getElementById('add-task-btn').addEventListener('click', function() {
   const taskInput = document.getElementById('task-input');
   
@@ -17,7 +16,6 @@ document.getElementById('add-task-btn').addEventListener('click', function() {
   document.getElementById("message").innerHTML = "";
 });
 
-// Añadir tarea al DOM y actualizar `tasksArray`
 const addTask = (taskText, finished = false, save = true) => {
   const li = document.createElement('li');
   const completedCheck = document.createElement('p');
@@ -28,7 +26,6 @@ const addTask = (taskText, finished = false, save = true) => {
   completedCheck.innerText = "✅";
   completedCheck.classList.add('invisible');
   
-  // li.textContent = taskText;
   li.appendChild(completedCheck);
   li.appendChild(text);
 
@@ -69,7 +66,6 @@ const addTask = (taskText, finished = false, save = true) => {
   listIsEmpty();
 }
 
-// Cargar las tareas almacenadas en el DOM sin duplicarlas
 const checkStorage = () => {
   if (tasksArray.length > 0) {
     tasksArray.forEach(task => {
