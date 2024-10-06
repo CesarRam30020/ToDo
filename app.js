@@ -20,7 +20,17 @@ document.getElementById('add-task-btn').addEventListener('click', function() {
 // Añadir tarea al DOM y actualizar `tasksArray`
 const addTask = (taskText, finished = false, save = true) => {
   const li = document.createElement('li');
-  li.textContent = taskText;
+  const completedCheck = document.createElement('p');
+  const text = document.createElement('p');
+  
+  text.textContent = taskText
+  
+  completedCheck.innerText = "✅";
+  completedCheck.classList.add('invisible');
+  
+  // li.textContent = taskText;
+  li.appendChild(completedCheck);
+  li.appendChild(text);
 
   if (save) {
     tasksArray.push({ text: taskText, finished: finished });
@@ -42,14 +52,18 @@ const addTask = (taskText, finished = false, save = true) => {
   li.appendChild(deleteBtn);
 
   li.addEventListener('click', function() {
-    li.classList.toggle('completed');
+    text.classList.toggle('completed');
+    completedCheck.classList.toggle('invisible');
     tasksArray = tasksArray.map(task => 
       task.text === taskText ? { ...task, finished: !task.finished } : task
     );
     localStorage.setItem('tasks', JSON.stringify(tasksArray));
   });
 
-  if (finished) li.classList.add('completed');
+  if (finished) {
+    li.classList.add('completed');
+    completedCheck.classList.remove('invisible');
+  }
 
   taskList.appendChild(li);
   listIsEmpty();

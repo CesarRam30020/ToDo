@@ -103,3 +103,11 @@ li {
   display: inline-block;
   animation: earthquake 0.5s .5;
 }
+
+.invisible {
+  display: none;
+}
+
+li {
+  cursor: pointer;
+}
